@@ -9,7 +9,7 @@ echo Cek Hak Akses...
 sleep 0.5
 cd
 cd /usr/local/bin/
-wget -O /usr/local/bin/ws-stunnel https://raw.githubusercontent.com/fsidvpn/sc/main/ws-stunnel
+wget -O /usr/local/bin/ws-stunnel https://raw.githubusercontent.com/Zeastore/gaspoll/main/ws-stunnel
 chmod +x /usr/local/bin/ws-stunnel
 
 # Installing Service

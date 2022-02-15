@@ -4,7 +4,7 @@ green='\e[0;32m'
 NC='\e[0m'
 clear
 apt install jq curl -y
-DOMAIN=fsind.site
+DOMAIN=zeaking.me
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c4)
 SUB_DOMAIN=${sub}.zeaking.me
 CF_ID=mulahkual@gmail.com

@@ -28,9 +28,9 @@ read -p "Expired (days): " masaaktif
 exp=`date -d "$masaaktif days" +"%d-%m-%Y"`
 created=`date -d "0 days" +"%d-%m-%Y"`
 sed -i '/#tls$/a\### '"$user $exp"'\
-},{"id": "'""$uuid""'","alterId": '"2"',"email": "'""$user""'"' /etc/v2ray/config.json
+},{"id": "'""$uuid""'","alterId": '"0"',"email": "'""$user""'"' /etc/v2ray/config.json
 sed -i '/#none$/a\### '"$user $exp"'\
-},{"id": "'""$uuid""'","alterId": '"2"',"email": "'""$user""'"' /etc/v2ray/none.json
+},{"id": "'""$uuid""'","alterId": '"0"',"email": "'""$user""'"' /etc/v2ray/none.json
 cat>/etc/v2ray/$user-tls.json<<EOF
       {
       "v": "2",
@@ -38,9 +38,9 @@ cat>/etc/v2ray/$user-tls.json<<EOF
       "add": "${domain}",
       "port": "${tls}",
       "id": "${uuid}",
-      "aid": "2",
+      "aid": "0",
       "net": "ws",
-      "path": "/geo",
+      "path": "/zea",
       "type": "none",
       "host": "",
       "tls": "tls"
@@ -53,9 +53,9 @@ cat>/etc/v2ray/$user-none.json<<EOF
       "add": "${domain}",
       "port": "${none}",
       "id": "${uuid}",
-      "aid": "2",
+      "aid": "0",
       "net": "ws",
-      "path": "/gabut",
+      "path": "/zea",
       "type": "none",
       "host": "",
       "tls": "none"
@@ -75,11 +75,11 @@ echo -e "Domain         : ${domain}"
 echo -e "port TLS       : ${tls}"
 echo -e "port none TLS  : ${none}"
 echo -e "id             : ${uuid}"
-echo -e "alterId        : 2"
+echo -e "alterId        : 0"
 echo -e "Security       : auto"
 echo -e "network        : ws"
-echo -e "path TLS       : /geo"
-echo -e "path non TLS   : /gabut"
+echo -e "path TLS       : /zea"
+echo -e "path non TLS   : /zea"
 echo -e "Created        : $created"
 echo -e "Expired        : $exp"
 echo -e "================================="

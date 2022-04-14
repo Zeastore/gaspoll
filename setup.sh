@@ -483,12 +483,14 @@ echo "" | tee -a log-install.txt
 echo "-----------------------------------------------" | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "   >>> Service & Port"  | tee -a log-install.txt
-echo "   - OpenSSH                 : 22"  | tee -a log-install.txt
-echo "   - OpenVPN                 : TCP 1194, UDP 2200, SSL 442"  | tee -a log-install.txt
-echo "   - PORT STUNNEL            : 990, 445"  | tee -a log-install.txt
-echo "   - Dropbear                : 143, 109"  | tee -a log-install.txt
-echo "   - Squid Proxy             : 3128, 8080 (limit to IP Server)"  | tee -a log-install.txt
-echo "   - Badvpn                  : 7100, 7200, 7300"  | tee -a log-install.txt
+echo "   - PORT OPENSSH     ; 22" |tee -a log-install.txt
+echo "   - PORT OPENVPN TCP : 1194" |tee -a log-install.txt
+echo "   - PORT OPENVPN UDP : 2200" |tee -a log-install.txt
+echo "   - PORT OPENVPN SSL : 992" |tee -a log-install.txt
+echo "   - PORT STUNNEL5 : 990, 445" |tee -a log-install.txt
+echo "   - PORT DROPBEAR : 143, 109" |tee -a log-install.txt
+echo "   - PORT SQUID : 3128, 8080" |tee -a log-install.txt
+echo "   - Badvpn : 7100, 7200, 7300-7900" |tee -a log-install.txt
 echo "   - Nginx                   : 81"  | tee -a log-install.txt
 echo "   - Wireguard               : 7070"  | tee -a log-install.txt
 echo "   - L2TP/IPSEC VPN          : 1701"  | tee -a log-install.txt

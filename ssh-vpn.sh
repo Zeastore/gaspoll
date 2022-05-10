@@ -157,10 +157,10 @@ socket = r:TCP_NODELAY=1
 accept = 445
 connect =127.0.0.1:8880
 [dropbear]
-accept = 443
+accept = 777
 connect = 127.0.0.1:109
 [dropbear]
-accept = 777
+accept = 443
 connect = 127.0.0.1:109
 [openvpn]
 accept = 992

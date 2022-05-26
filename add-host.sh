@@ -14,4 +14,5 @@ $domainbaru
 END
 
 clear 
-echo "SUCCESS"
+echo "SUCCESS CHANGE DOMAIN"
+echo "SCRIPT BY : ZEASTORE"

@@ -46,6 +46,7 @@ systemctl restart ws-nontls
 systemctl restart ssh-ohp
 systemctl restart dropbear-ohp
 systemctl restart openvpn-ohp
+echo -e ""
 echo -e "\033[1;31m━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "\033[1;46m 🔰 AKUN SSH DAN OVPN 🔰  \e[m"   
 echo -e "\033[1;31m━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
@@ -61,9 +62,9 @@ echo -e "Ovpn Ws : $ows"
 echo -e "Port TCP : $otcp"
 echo -e "Port UDP : $oudp"
 echo -e "Port SSL : $ossl"
-echo -e "OVPN TCP : http://$MYIP:81/tcp.ovpn"
-echo -e "OVPN UDP : http://$MYIP:81/udp.ovpn"
-echo -e "OVPN SSL : http://$MYIP:81/ssl.ovpn"
+echo -e "OVPN TCP : http://$MYIP/${domain}:81/tcp.ovpn"
+echo -e "OVPN UDP : http://$MYIP/${domain}:81/udp.ovpn"
+echo -e "OVPN SSL : http://$MYIP/${domain}:81/ssl.ovpn"
 echo -e "BadVpn : 7100-7200-7900"
 echo -e "Created : $hariini"
 echo -e "Expired : $expi"
@@ -73,3 +74,5 @@ echo -e "GET wss://bugmu.com /http/1.1[crlf]Host: ${domain}[crlf]Upgrade: websoc
 echo -e "\033[1;31m━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "GET wss://bugmu.com /http/1.1[crlf]Host: ${domain}[crlf]Upgrade: websocket[crlf][crlf]"
 echo -e "\033[1;31m━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e ""
+echo -e " SCRIPT BY : ZEASTORE "

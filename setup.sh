@@ -496,10 +496,10 @@ echo "   - Wireguard               : 7070"  | tee -a log-install.txt
 echo "   - L2TP/IPSEC VPN          : 1701"  | tee -a log-install.txt
 echo "   - PPTP VPN                : 1732"  | tee -a log-install.txt
 echo "   - SSTP VPN                : 444"  | tee -a log-install.txt
-echo "   - Shadowsocks-R           : 1443-1543"  | tee -a log-install.txt
+echo "   - Shadowsocks-R           : 1444-1543"  | tee -a log-install.txt
 echo "   - SS-OBFS TLS             : 2443-2543"  | tee -a log-install.txt
 echo "   - SS-OBFS HTTP            : 3443-3543"  | tee -a log-install.txt
-echo "   - V2RAY Vmess TLS         : 8443"  | tee -a log-install.txt
+echo "   - V2RAY Vmess TLS         : 1443"  | tee -a log-install.txt
 echo "   - V2RAY Vmess None TLS    : 80"  | tee -a log-install.txt
 echo "   - V2RAY Vless TLS         : 2083"  | tee -a log-install.txt
 echo "   - V2RAY Vless None TLS    : 8880"  | tee -a log-install.txt
@@ -524,11 +524,11 @@ echo "   - White Label" | tee -a log-install.txt
 echo "   - Installation Log --> /root/log-install.txt"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "   - Dev/Main                : ZEAKING STORE"  | tee -a log-install.txt
-echo "   - Telegram                : not found"  | tee -a log-install.txt
-echo "   - Instagram               : not found"  | tee -a log-install.txt
-echo "   - Whatsapp                : not found"  | tee -a log-install.txt
-echo "   - Facebook                : not found" | tee -a log-install.txt
-echo "------------------Script Created By ZEASTORE-----------------" | tee -a log-install.txt
+echo "   - Telegram                : t.me/@zeaking10"  | tee -a log-install.txt
+echo "   - Instagram               : @Ageng4410_"  | tee -a log-install.txt
+echo "   - Whatsapp                : wa.me/6281927625651"  | tee -a log-install.txt
+echo "   - Facebook                : PRIVATE" | tee -a log-install.txt
+echo "------------------Script Recode By ZEASTORE-----------------" | tee -a log-install.txt
 echo ""
 echo " reboot 10 Sec"
 sleep 10

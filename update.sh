@@ -46,7 +46,6 @@ wget -O autobackup "https://raw.githubusercontent.com/Zeastore/gaspoll/main/auto
 wget -O rclone "https://raw.githubusercontent.com/Zeastore/gaspoll/main/rclone.conf"
 
 chmod +x add-host
-chmod +x script-info
 chmod +x menu
 chmod +x usernew
 chmod +x trial

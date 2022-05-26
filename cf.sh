@@ -5,8 +5,10 @@ NC='\e[0m'
 clear
 apt install jq curl -y
 DOMAIN=zeaking.me
+DOMAIN=zeaking.my.id
 sub=$(</dev/urandom tr -dc a-z | head -c4)
 SUB_DOMAIN=${sub}.zeaking.me
+SUB_DOMAIN=${sub}.zeaking.my.id
 CF_ID=mulahkual@gmail.com
 CF_KEY=1351e3252ad80b9a761d34d125545053403b5
 set -euo pipefail

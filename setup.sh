@@ -12,7 +12,7 @@ fi
 red='\e[1;31m'
 green='\e[0;32m'
 NC='\e[0m'
-MYIP=$(wget -qO- ipinfo.io);
+MYIP=$(wget -qO- ipv4.wildyproject.com);
 IZIN=$( curl https://raw.githubusercontent.com/Zeastore/gaspoll/main/ipvps.txt | grep $MYIP )
 if [ $MYIP = $IZIN ]; then
 echo -e "${green}Permission Accepted...${NC}"

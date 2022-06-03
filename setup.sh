@@ -491,7 +491,7 @@ echo "   - PORT STUNNEL : 777, 443" |tee -a log-install.txt
 echo "   - PORT DROPBEAR : 143, 109" |tee -a log-install.txt
 echo "   - PORT SQUID : 3128, 8080" |tee -a log-install.txt
 echo "   - Badvpn : 7100, 7200, 7300-7900" |tee -a log-install.txt
-echo "   - Nginx                   : 81"  | tee -a log-install.txt
+echo "   - Nginx                   : 89"  | tee -a log-install.txt
 echo "   - Wireguard               : 7070"  | tee -a log-install.txt
 echo "   - L2TP/IPSEC VPN          : 1701"  | tee -a log-install.txt
 echo "   - PPTP VPN                : 1732"  | tee -a log-install.txt

@@ -504,9 +504,9 @@ echo "   - V2RAY Vmess None TLS    : 80"  | tee -a log-install.txt
 echo "   - V2RAY Vless TLS         : 2083"  | tee -a log-install.txt
 echo "   - V2RAY Vless None TLS    : 8880"  | tee -a log-install.txt
 echo "   - Trojan                  : 2087"  | tee -a log-install.txt
-echo "   - SSH WS TLS              : 2053"  | tee -a log-install.txt
+echo "   - WS TLS                  : 2053"  | tee -a log-install.txt
 echo "   - TrojanGO                : 2096"  | tee -a log-install.txt
-echo "   - SSH WS None TLS         : 2082"  | tee -a log-install.txt
+echo "   - SSH WS                  : 2082"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "   >>> Server Information & Other Features"  | tee -a log-install.txt
 echo "   - Timezone                : Asia/Jakarta (GMT +7)"  | tee -a log-install.txt

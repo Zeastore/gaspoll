@@ -9,8 +9,8 @@ chmod +x /usr/local/bin/edu-ssh
 # Installing Service
 cat > /etc/systemd/system/edussh-nontls.service << END
 [Unit]
-Description=Ssh Websocket By Brody
-Documentation=https://t.me/brody_waemang
+Description=Ssh Websocket By ZEAKING SIMILIKITIWELEHWELEH
+Documentation=https://t.me/zerossl
 After=network.target nss-lookup.target
 [Service]
 Type=simple
@@ -31,8 +31,8 @@ systemctl restart edussh-nontls
 # Installing Service
 cat > /etc/systemd/system/edussh-tls.service << END
 [Unit]
-Description=Ssh Websocket By Brody
-Documentation=https://t.me/brody_waemang
+Description=Ssh Websocket By ZEAKING SIMILIKITIWELEHWELEH
+Documentation=https://t.me/zerossl
 After=network.target nss-lookup.target
 [Service]
 Type=simple
@@ -61,8 +61,8 @@ chmod +x /usr/local/bin/edu-ovpn
 # Installing Service Ovpn Websocket
 cat > /etc/systemd/system/edu-ovpn.service << END
 [Unit]
-Description=Ovpn Websocket By Brody
-Documentation=https://t.me/brody_waemang
+Description=Ovpn Websocket By ZEAKING SIMILIKITIWELEHWELEH
+Documentation=https://t.me/zerossl
 After=network.target nss-lookup.target
 [Service]
 Type=simple

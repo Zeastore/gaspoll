@@ -47,7 +47,7 @@ cat> /etc/v2ray/config.json << END
   },
   "inbounds": [
     {
-      "port": 1443,
+      "port": 443,
       "protocol": "vmess",
       "settings": {
         "clients": [
@@ -70,7 +70,7 @@ cat> /etc/v2ray/config.json << END
           ]
         },
         "wsSettings": {
-          "path": "/zea",
+          "path": "/kuota-habis",
           "headers": {
             "Host": ""
           }
@@ -158,7 +158,7 @@ cat> /etc/v2ray/none.json << END
       "streamSettings": {
         "network": "ws",
         "wsSettings": {
-          "path": "/zea",
+          "path": "/kuota-habis",
           "headers": {
             "Host": ""
           }

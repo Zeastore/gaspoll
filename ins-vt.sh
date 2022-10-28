@@ -28,28 +28,28 @@ mkdir /root/.acme.sh
 mkdir -p /var/log/xray/
 
 ##Generate acme certificate
-curl https://get.acme.sh | sh
-alias acme.sh=~/.acme.sh/acme.sh
-/root/.acme.sh/acme.sh --upgrade --auto-upgrade
-/root/.acme.sh/acme.sh --set-default-ca --server letsencrypt
+#curl https://get.acme.sh | sh
+#alias acme.sh=~/.acme.sh/acme.sh
+#/root/.acme.sh/acme.sh --upgrade --auto-upgrade
+#/root/.acme.sh/acme.sh --set-default-ca --server letsencrypt
 #/root/.acme.sh/acme.sh --issue -d "${domain}" --standalone --keylength ec-2048
-/root/.acme.sh/acme.sh --issue -d "${domain}" --standalone --keylength ec-256
-/root/.acme.sh/acme.sh --install-cert -d "${domain}" --ecc \
---fullchain-file /etc/xray/xray.crt \
---key-file /etc/xray/xray.key
-chown -R nobody:nogroup /etc/xray
-chmod 644 /etc/xray/xray.crt
-chmod 644 /etc/xray/xray.key
+#/root/.acme.sh/acme.sh --issue -d "${domain}" --standalone --keylength ec-256
+#/root/.acme.sh/acme.sh --install-cert -d "${domain}" --ecc \
+#--fullchain-file /etc/xray/xray.crt \
+#--key-file /etc/xray/xray.key
+#chown -R nobody:nogroup /etc/xray
+#chmod 644 /etc/xray/xray.crt
+#chmod 644 /etc/xray/xray.key
 
-#sudo lsof -t -i tcp:80 -s tcp:listen | sudo xargs kill
-#cd /root/
-#wget https://raw.githubusercontent.com/acmesh-official/acme.sh/master/acme.sh
-#bash acme.sh --install
-#rm acme.sh
-#cd .acme.sh
-#bash acme.sh --register-account -m mulahkual@gmail.com
-#bash acme.sh --issue --standalone -d $domain --force
-#bash acme.sh --installcert -d $domain --fullchainpath /etc/v2ray/v2ray.crt --keypath /etc/v2ray/v2ray.key
+sudo lsof -t -i tcp:80 -s tcp:listen | sudo xargs kill
+cd /root/
+wget https://raw.githubusercontent.com/acmesh-official/acme.sh/master/acme.sh
+bash acme.sh --install
+rm acme.sh
+cd .acme.sh
+bash acme.sh --register-account -m mulahkual@gmail.com
+bash acme.sh --issue --standalone -d $domain --force
+bash acme.sh --installcert -d $domain --fullchainpath /etc/v2ray/v2ray.crt --keypath /etc/v2ray/v2ray.key
 service squid start
 uuid=$(cat /proc/sys/kernel/random/uuid)
 cat> /etc/v2ray/config.json << END

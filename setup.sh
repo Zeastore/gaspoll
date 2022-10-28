@@ -487,7 +487,7 @@ echo "   - PORT OPENSSH     ; 22" |tee -a log-install.txt
 echo "   - PORT OPENVPN TCP : 1194" |tee -a log-install.txt
 echo "   - PORT OPENVPN UDP : 2200" |tee -a log-install.txt
 echo "   - PORT OPENVPN SSL : 992" |tee -a log-install.txt
-echo "   - PORT STUNNEL : 777, 443" |tee -a log-install.txt
+echo "   - PORT STUNNEL : 777, 1443" |tee -a log-install.txt
 echo "   - PORT DROPBEAR : 143, 109" |tee -a log-install.txt
 echo "   - PORT SQUID : 3128, 8080" |tee -a log-install.txt
 echo "   - Badvpn : 7100, 7200, 7300-7900" |tee -a log-install.txt
@@ -499,7 +499,7 @@ echo "   - SSTP VPN                : 444"  | tee -a log-install.txt
 echo "   - Shadowsocks-R           : 1444-1543"  | tee -a log-install.txt
 echo "   - SS-OBFS TLS             : 2443-2543"  | tee -a log-install.txt
 echo "   - SS-OBFS HTTP            : 3443-3543"  | tee -a log-install.txt
-echo "   - V2RAY Vmess TLS         : 1443"  | tee -a log-install.txt
+echo "   - V2RAY Vmess TLS         : 443"  | tee -a log-install.txt
 echo "   - V2RAY Vmess None TLS    : 80"  | tee -a log-install.txt
 echo "   - V2RAY Vless TLS         : 2083"  | tee -a log-install.txt
 echo "   - V2RAY Vless None TLS    : 8880"  | tee -a log-install.txt
